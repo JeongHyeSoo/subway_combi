@@ -1,0 +1,61 @@
+
+
+
+#back{    
+    background-image: url("back2.jpg");
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#intro{
+    margin : 20px;
+}
+.text{
+    padding : 60px;
+}
+#link{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+#progress{
+    background-color:rgb(223, 223, 223);
+    padding : 70px;
+}
+
+li{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.work{
+    font-size:25px;
+    font-weight: bold;
+}
+
+
+.img{
+    margin-top:10px;
+    margin-bottom:10px;
+    max-width: 100%;
+    height:auto;
+        }
+
+/*footer*/
+
+.icon_img{text-align: center;}
+.icon_bottom{ margin:10px;
+        width: 70px;
+        height:70px;}
+
+#comment{
+    text-align: center;
+}
+
+footer{
+    padding:30px;
+    background-color:rgb(206, 206, 206);
+    color:rgb(56, 56, 56);
+    font-size: 20px;
+}
