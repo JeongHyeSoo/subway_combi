@@ -1,117 +1,356 @@
 <html>
     <head>
         <title>주문방법</title>
-        <link rel="stylesheet" href="subway_introduce_style.css">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="subway_introduce_style.css">
+        <link rel="stylesheet" href="style_page2.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    
+
 <!--css 자리-->
     </head>
     <body>
     <!--헤더-->
         <header>
-            <a href="index.html" id="logo"><img src="./폰트/서브웨이 로고.png" width="170px" height="60px"></a>
+            <a href="index.html" id="logo"><img src="./폰트/서브웨이 로고.png" width="250px" height="70px"></a>
+            <div id="bar">
             <a href="subway_page1.html"> | 꿀조합</a>
             <a href="subway_page2.html"> | 주문방법</a>
             <a href="subway_page2.html"> | 매장찾기 |</a>
+          </div>
         </header>
         <nav>
         </nav>
-            
+
+<!-- css 박스 test -->
         <section id="main">
             <div  class="container-fluid">
-                <h1>주문방법</h1>
+             <h3><span>주문방법</span></h3>
+                <hr class="green_line"><!-- 구분선 -->
+                <div class="groupbox1"><!-- 주문방법 박스-->
                 <div class="row">
-                    <div class="col-md-2"> <!--사진크기 다시 조정해야함-->
+                    <div class="col-md-2">
                         메뉴 선택
-                        <br/><img src="./page2 주문방법/main/img_store_order01.png" width="150px" height="150px">
+                        <br/><img src="./page2 주문방법/main/img_store_order01.png" width="200px" height="150px">
                     </div>
                     <div class="col-md-2">
                         빵 선택
-                        <br/><img src="./page2 주문방법/main/img_store_order02.png" width="150px" height="150px">
+                        <br/><img src="./page2 주문방법/main/img_store_order02.png" width="200px" height="150px">
                     </div>
                     <div class="col-md-2">
-                        야채 선택
-                        <br/><img src="./page2 주문방법/main/img_store_order03.png" width="150px" height="150px">
+                        추가 선택
+                        <br/><img src="./page2 주문방법/main/img_store_order03.png" width="200px" height="150px">
                     </div>
                     <div class="col-md-2">
-                        소스 선택
-                        <br/><img src="./page2 주문방법/main/img_store_order04.png" width="150px" height="150px">
+                        야채&소스 선택
+                        <br/><img src="./page2 주문방법/main/img_store_order04.png" width="200px" height="150px">
                     </div>
                     <div class="col-md-2">
-                        기타<!--(부가적인 뭐가 있다는데 그거에 대한 다른 사진 필요함!!)-->
-                        <br><img src="./page2 주문방법/main/img_store_order05.png" width="150px" height="150px">
+                        <br><img src="./page2 주문방법/main/img_store_order06.png" width="200px" height="150px">
                     </div>
                     <div class="col-md-2">
                         주문 완료!!
-                        <br><img src="./page2 주문방법/main/img_store_order05.png" width="150px" height="150px">
+                        <br><img src="./page2 주문방법/main/img_store_order05.png" width="200px" height="150px">
                     </div>
                 </div>
             </div>
+          </div>
         </section>
-            <h1>종류</h1>
+            <h3>종류</h3>
+            <hr class="green_line"><br>
+            <!-- 구분선 -->
             <ul>
+              <section>
                 <li>메뉴</li>
-                <br>아침메뉴<br>
-                <img src="./page2 주문방법/메뉴선택/아침메뉴/베이컨, 에그&치즈.jpg">
-                <img src="./page2 주문방법/메뉴선택/아침메뉴/블랙 포레스트햄&에그,치즈.jpg">
-                <img src="./page2 주문방법/메뉴선택/아침메뉴/스테이크, 에그&치즈.jpg">
-                <img src="./page2 주문방법/메뉴선택/아침메뉴/웨스턴, 에그&치즈.jpg">
-                <br>클래식<br>
-                <img src="./page2 주문방법/메뉴선택/클래식/미트볼.jpg">
-                <img src="./page2 주문방법/메뉴선택/클래식/비엘티.jpg">
-                <img src="./page2 주문방법/메뉴선택/클래식/에그마요.jpg">
-                <img src="./page2 주문방법/메뉴선택/클래식/이탈리안 비엠티.jpg">
-                <img src="./page2 주문방법/메뉴선택/클래식/참치.jpg">
-                <img src="./page2 주문방법/메뉴선택/클래식/햄.jpg">
+                <!-- css 박스 오류 수정필요 -->
+                <div class="groupbox2">
+                <h4><span>아침메뉴</span></h4>
+                <div class="breakfast">
+                <figure>
+                <img  class="menu" src="./page2 주문방법/메뉴선택/아침메뉴/베이컨, 에그&치즈.jpg">
+                <figcaption> 베이컨, 에그&치즈 </figcaption>
+                </figure>
+                </div>
+                <div class="breakfast">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/아침메뉴/블랙 포레스트햄&에그,치즈.jpg" >
+                <figcaption> 블랙 포레스트햄&에그,치즈 </figcaption>
+                </figure>
+                </div>
+                <div class="breakfast">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/아침메뉴/스테이크, 에그&치즈.jpg" >
+                <figcaption> 스테이크, 에그&치즈 </figcaption>
+                </figure>
+                </div>
+                <div class="breakfast">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/아침메뉴/웨스턴, 에그&치즈.jpg">
+                <figcaption> 웨스턴, 에그&치즈 </figcaption>
+                </figure>
+                </div>
+              </div>
+            </section>
+              <!-- 필드셋 test -->
+
+                <div class="groupbox2">
+                <h4><span>클래식</span></h4>
+                <div class="classic">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/클래식/미트볼.jpg">
+                <figcaption> 미트볼 </figcaption>
+                </figure>
+                </div>
+                <div class="classic">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/클래식/비엘티.jpg">
+                <figcaption> 비엘티 </figcaption>
+                </figure>
+                </div>
+                <div class="classic">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/클래식/에그마요.jpg">
+                <figcaption> 에그마요 </figcaption>
+                </figure>
+                </div>
+                <div class="classic">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/클래식/이탈리안 비엠티.jpg">
+                <figcaption> 이탈리안 비엠티 </figcaption>
+                </figure>
+                </div>
+                <div class="classic">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/클래식/참치.jpg">
+                <figcaption> 참치 </figcaption>
+                </figure>
+                </div>
+                <div class="classic">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/클래식/햄.jpg">
+               <figcaption> 햄 </figcaption>
+                </figure>
+                </div>
+                </div>
+
+
                 <br>프레쉬&라이트<br>
-                <img src="./page2 주문방법/메뉴선택/프레쉬&라이트/로스트 치킨.jpg">
-                <img src="./page2 주문방법/메뉴선택/프레쉬&라이트/로티세리 바비큐 치킨.jpg">
-                <img src="./page2 주문방법/메뉴선택/프레쉬&라이트/베지.jpg">
-                <img src="./page2 주문방법/메뉴선택/프레쉬&라이트/써브웨이 클럽.jpg">
-                <img src="./page2 주문방법/메뉴선택/프레쉬&라이트/터키.jpg">
+                <div class="fresh">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프레쉬&라이트/로스트 치킨.jpg">
+                <figcaption> 로스트 치킨 </figcaption>
+                </figure>
+                </div>
+                <div class="fresh">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프레쉬&라이트/로티세리 바비큐 치킨.jpg">
+                <figcaption> 로티세리 바비큐 치킨 </figcaption>
+                </figure>
+                </div>
+                <div class="fresh">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프레쉬&라이트/베지.jpg">
+                <figcaption> 베지 </figcaption>
+                </figure>
+                </div>
+                <div class="fresh">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프레쉬&라이트/써브웨이 클럽.jpg">
+                <figcaption> 클럽 </figcaption>
+                </figure>
+                </div>
+                <div class="fresh">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프레쉬&라이트/터키.jpg">
+                <figcaption> 터키 </figcaption>
+                </figure>
+                </div>
+
                 <br>프리미엄<br>
-                <img src="./page2 주문방법/메뉴선택/프리미엄/쉬림프.jpg">
-                <img src="./page2 주문방법/메뉴선택/프리미엄/스테이크&치즈.jpg">
-                <img src="./page2 주문방법/메뉴선택/프리미엄/스파이시 이탈리안.jpg">
-                <img src="./page2 주문방법/메뉴선택/프리미엄/써브웨이 멜트.jpg">
-                <img src="./page2 주문방법/메뉴선택/프리미엄/치킨 데리야끼.jpg">
-                <img src="./page2 주문방법/메뉴선택/프리미엄/터키 베이컨 아보카도.jpg">
-                <img src="./page2 주문방법/메뉴선택/프리미엄/풀드포크.jpg">
+
+                <div class="premium">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프리미엄/쉬림프.jpg">
+                <figcaption> 쉬림프 </figcaption>
+                </figure>
+                </div>
+                <div class="premium">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프리미엄/스테이크&치즈.jpg">
+                <figcaption> 스테이크&치즈 </figcaption>
+                </figure>
+                </div>
+                <div class="premium">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프리미엄/스파이시 이탈리안.jpg">
+                <figcaption> 스파이시 이탈리안 </figcaption>
+                </figure>
+                </div>
+                <div class="premium">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프리미엄/써브웨이 멜트.jpg">
+                <figcaption> 써브웨이 멜트 </figcaption>
+                </figure>
+                </div>
+                <div class="premium">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프리미엄/치킨 데리야끼.jpg">
+                <figcaption> 치킨 데리야끼 </figcaption>
+                </figure>
+                </div>
+                <div class="premium">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프리미엄/터키 베이컨 아보카도.jpg">
+                <figcaption> 터키 베이컨 아보카도 </figcaption>
+                </figure>
+                </div>
+                <div class="premium">
+                <figure>
+                <img class="menu" src="./page2 주문방법/메뉴선택/프리미엄/풀드포크.jpg">
+                <figcaption> 풀드포크 </figcaption>
+                </figure>
+                </div>
+                  <hr class="min_line">
                 <li>빵</li><br>
-                <img src="./page2 주문방법/빵선택/1 허니오트.png" width="150px" height="150px">
-                <img src="./page2 주문방법/빵선택/2 하티.png" width="150px" height="150px">
-                <img src="./page2 주문방법/빵선택/3 위트.png" width="150px" height="150px">
-                <img src="./page2 주문방법/빵선택/4 파마산 오레가노.png" width="150px" height="150px">
-                <img src="./page2 주문방법/빵선택/5 화이트.png" width="150px" height="150px">
-                <img src="./page2 주문방법/빵선택/6 플랫브래드.png" width="150px" height="150px">
-                <li>야채</li><br>
-                <img src="./page2 주문방법/야채선택/토마토.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/7 양상추.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/9 오이.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/10 피망.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/11 양파.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/12 피클.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/13 올리브.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/14 할라피뇨.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/15 아보카도.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/16 아메리칸 치즈.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/17 슈레드 치즈.png" width="150px" height="150px">
-                <img src="./page2 주문방법/야채선택/18 모차렐라 치즈.png" width="150px" height="150px">
+
+                <div class="bread">
+                <figure>
+                <img class="menu2"src="./page2 주문방법/빵선택/1 허니오트.png">
+                <figcaption> 허니오트 </figcaption>
+                </figure>
+                </div>
+                <div class="bread">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/빵선택/2 하티.png">
+                <figcaption> 하티 </figcaption>
+                </figure>
+                </div>
+                <div class="bread">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/빵선택/3 위트.png">
+                <figcaption> 위트 </figcaption>
+                </figure>
+                </div>
+                <div class="bread">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/빵선택/4 파마산 오레가노.png">
+                <figcaption> 파마산 오레가노 </figcaption>
+                </figure>
+                </div>
+                <div class="bread">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/빵선택/5 화이트.png">
+                <figcaption> 화이트 </figcaption>
+                </figure>
+                </div>
+                <div class="bread" style="word-break:break-all;">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/빵선택/6 플랫브래드.png">
+                <figcaption> 플랫브래드 </figcaption>
+                </figure>
+                </div>
+<p>
+                <li>채소&치즈</li><br>
+                <hr class="min_line">
+
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/토마토.png">
+                <figcaption> 토마토 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/7 양상추.png">
+                <figcaption> 양상추 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/9 오이.png">
+                <figcaption> 오이 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/10 피망.png">
+                <figcaption> 피망 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/11 양파.png">
+                <figcaption> 양파 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/12 피클.png">
+                <figcaption> 피클 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/13 올리브.png">
+                <figcaption> 올리브 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/14 할라피뇨.png">
+                <figcaption> 할라피뇨 </figcaption>
+                </figure>
+                </div>
+                <div class="vegetable">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/15 아보카도.png">
+                <figcaption> 아보카도 </figcaption>
+                </figure>
+                </div>
+                <div class="cheese">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/16 아메리칸 치즈.png">
+               <figcaption> 아메리칸 치즈 </figcaption>
+                </figure>
+                </div>
+                <div class="cheese">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/17 슈레드 치즈.png" >
+                <figcaption> 슈레드 치즈 </figcaption>
+                </figure>
+                </div>
+                <div class="cheese">
+                <figure>
+                <img class="menu2" src="./page2 주문방법/야채선택/18 모차렐라 치즈.png" >
+                <figcaption> 모차렐라 치즈 </figcaption>
+                </figure>
+                </div>
+</p>
+
                 <li>소스</li><br>
-                <img src="./page2 주문방법/소스선택/s1.png" width="150px" height="150px">
-                <img src="./page2 주문방법/소스선택/s2.png" width="150px" height="150px">
-                <img src="./page2 주문방법/소스선택/s3.png" width="150px" height="150px">
+                <hr class="min_line">
+                <div class="sauce">
+                <figure>
+                <img src="./page2 주문방법/소스선택/s1.png" width="400px" height="400px">
+                <figcaption> 소스1 </figcaption>
+                </div>
+                <div class="sauce">
+                <img src="./page2 주문방법/소스선택/s2.png" width="400px" height="400px">
+                <figcaption> 소스2 </figcaption>
+                </figure>
+                </div>
+
             </ul>
+
+
         <section >
 
         </section>
-    
 
-  
+
+
 
     </body>
 </html>

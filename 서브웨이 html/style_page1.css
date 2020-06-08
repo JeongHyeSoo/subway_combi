@@ -1,2 +1,17 @@
 .awards_img{width:400px; height: auto;}
 .col-md-5{ text-align: right;}
+#bar{
+  position: relative;
+  left:1200px;
+  margin-bottom: 30px;
+  }/*상단바 위치 조정*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+body{
+  font-family: 'Nanum Gothic Coding', monospace;
+overflow-x: hidden;}
+h1{
+  font-family:
+}
+#col-md-7{
+
+}
