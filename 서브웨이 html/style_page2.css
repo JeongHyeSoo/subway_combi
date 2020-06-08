@@ -1,0 +1,146 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');/*구글 폰트 링크*/
+  body{/*전체 글꼴*/
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin-left: 300px;
+    overflow-x: hidden;
+  }
+  #bar{
+    position: relative;
+    left:1200px;
+    margin-bottom: 30px;
+    }/*상단바 위치 조정*/
+  .row{
+
+  }
+  .col-md-2{
+
+  }
+  figure {
+       display: inline-block;/*범위확인용 나중에 지우기*/
+       border: 1px dotted gray;
+       margin-right: 0;
+}
+  figure img {
+       vertical-align: top;
+       margin: 0;
+     }
+  figure figcaption {
+       border: 1px dotted blue;
+       text-align: center;
+       width: 220px;
+}
+ /* figcaption{
+    position: relative;
+    left: 40px;
+  } */
+  .green_line{/*초록 구분선*/
+    width: 100%;
+    height: 3px;
+    background-color: #23A41A;
+    margin: 30px;
+    padding: 0;
+    position: absolute;
+    left: -100px;}
+    h3 span {
+    background-color: white;		/* span 배경색*/
+    color: black;			/* 텍스트 색 */
+    padding: 4px;			/*좌우 선 사이의 간격 */
+    position: relative;
+    top: 2em;			/*상하 위치*/
+  }
+  .min_line{/*메뉴 내 소구분선*/
+    width: 100%;
+    height: 1px;
+    background-color: #FFE400; }
+  .breakfast{/*아침메뉴 블록요소 가로정열*/
+    float:left;
+    padding: 10px;
+    width: 33%;
+    }
+  .classic{/*클래식 블록요소 가로정열*/
+    float:left;
+    padding: 10px;
+    width: 33%;
+    }
+  .fresh{/*프레시앤 라이트 블록요소 가로정열*/
+    float:left;
+    padding: 10px;
+    width: 33%;
+    }
+  .premium{/*프리미엄 블록요소 가로정열*/
+    float:left;
+    padding: 10px;
+    width: 33%;
+     }
+  .bread{/*빵 블록요소 가로정열*/
+    float:left;
+    padding: 10px;
+    width: 20%;
+    }
+  .vegetable{/*야채 블록요소 가로정열*/
+    float:left;
+    padding: 10px;
+    width: 20%;
+      }
+  .cheese{/*치즈 블록요소 가로정열*/
+    float:left;
+    padding: 10px;
+    width: 20%;
+     }
+  .sauce{/*소스 블록요소 가로정열*/
+    float:left;
+    padding: 30px;
+    width: 33%;
+    }
+  .menu{/*메뉴 이미지 사이즈 조절*/
+    width: 250px;
+    height: 190px;
+     }
+  .menu2{/*빵, 야채, 치즈 이미지 사이즈 조절*/
+    width: 150px;
+    height: 150px;
+     }
+  div.groupbox1 {/* 주문방법 박스 */
+	width: 1300px;
+	height: auto;
+	margin: 2em 0 1em 0;
+	border: 1px solid #999;
+	padding: 0 8px;
+ }
+
+div.groupbox1 h4 {
+	line-height: 100%;
+	padding-left: 8px;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+div.groupbox1 p {
+	margin-bottom: 1em;
+	line-height: 170%;
+}
+
+div.groupbox2 {/*아침메뉴 박스*/
+width: 1300px;
+height: auto;
+margin: 2em 0 1em 0;
+border: 1px solid #999;
+padding: 0 8px;
+}
+div.groupbox2 h4 {
+line-height: 100%;
+padding-left: 8px;
+font-size: 20px;
+font-weight: normal;
+}
+div.groupbox2 h4 span {
+background-color: #fff;
+color: #333;
+padding: 0 4px;
+position: relative;
+top: -1.1em;
+}
+div.groupbox2 p {
+	margin-bottom: 1em;
+	line-height: 170%;
+}
