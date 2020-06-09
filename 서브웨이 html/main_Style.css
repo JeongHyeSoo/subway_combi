@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');/*구글 폰트 링크*/
+
 *{margin:0;padding:0;}
   ul,li{list-style:none;}
   #slide{height:600px;position:relative;overflow:hidden;}
@@ -17,17 +19,44 @@
   #pos1:checked~.pos>label:nth-child(1){background:#666;}
   #pos2:checked~.pos>label:nth-child(2){background:#666;}
   #pos3:checked~.pos>label:nth-child(3){background:#666;}
-  #logo{
-  margin:20px;
- }
-  #bar{
+  #logo{ margin:20px;}
+  #bar{/*상단바 위치 조정*/
     position: relative;
     left:1200px;
     margin-bottom: 30px;
-    }/*상단바 위치 조정*/
-  a:link{text-decoration:none; color:black; }/*상단바 링크 스타일 안먹음*/
-  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');/*구글폰트 링크 안먹음*/
-  body{
+    }
+  body{/*전체 글꼴*/
     font-family: 'Nanum Gothic Coding', monospace;
-    overflow-x: hidden;/*가로 스크롤바 제어*/
-}
+    margin-left: 300px;
+  }
+  .link{
+    color: black;
+    text-decoration: none;
+  }
+  .link:hover{
+    color: #23A41A;
+    text-decoration: none;
+  }
+  .footer{
+    font-size: 13px;
+    position: relative;
+    top: 600px;
+    text-decoration: underline;
+    }
+    .menu{
+      padding: 30px 0 0 20px;
+    }
+    .rank{
+      width: 350px;
+
+    }
+    .green_line{/*초록 구분선1*/
+      width: 2000px;
+      height: 7px;
+      background-color: #23A41A;
+      margin: 30px;
+      padding: 0;
+      position: relative;
+      left: -300px;
+      top: -30px;
+    }

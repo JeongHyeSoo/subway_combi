@@ -2,45 +2,130 @@
   body{/*전체 글꼴*/
     font-family: 'Nanum Gothic Coding', monospace;
     margin-left: 300px;
-    overflow-x: hidden;
   }
-  #bar{
+  #logo{
+  margin:20px;
+ }
+  #bar{/*상단바 위치 조정*/
     position: relative;
     left:1200px;
     margin-bottom: 30px;
-    }/*상단바 위치 조정*/
-  .row{
+    }
+    .link{
+      color: black;
+      text-decoration: none;
+    }
+    .link:hover{
+      color: #23A41A;
+      text-decoration: none;
+    }
+    nav {/*내비게이션*/
+      margin:0;
+      padding:10px 0 10px 0;
+      font-size:22px;
+      border:1.5px solid #23A41A;
+      background-color:#23A41A;
+      word-spacing:70pt;
+      width: 1300px;
+      position: relative;
+      bottom: 170px;
+      left: 100px;
+      text-align: center;
+   }
+    nav a{
+      color: #EDD200;
+      font-weight: bold;
+    }
+   .sea:hover{/*내비 글자 */
+    color: #FFF;
+    text-decoration: none;}
 
-  }
-  .col-md-2{
-
-  }
+    .footer{
+      font-size: 13px;
+      position: relative;
+      top: 600px;
+      text-decoration: underline;
+      }
   figure {
-       display: inline-block;/*범위확인용 나중에 지우기*/
-       border: 1px dotted gray;
+       display: none;/*범위확인용 나중에 지우기*/
        margin-right: 0;
 }
   figure img {
        vertical-align: top;
        margin: 0;
      }
-  figure figcaption {
-       border: 1px dotted blue;
+  figure figcaption {/*사진 밑 이름*/
+       border: 1px dotted #23A41A ;
        text-align: center;
-       width: 220px;
+       width: 240px;
+       font-weight: bold;
 }
+#jumun{  /* 초록선1 위 주문 글자 */
+  padding: 0 9px; /*글자 좌우 여백 */
+  background:#FFF;
+  font-family:;
+  font-size: 30px;
+  text-align:center;
+  position:relative;left: 100px; top: 70px;
+}
+
  /* figcaption{
     position: relative;
     left: 40px;
   } */
-  .green_line{/*초록 구분선*/
+  .green_line{/*초록 구분선1*/
     width: 100%;
     height: 3px;
     background-color: #23A41A;
     margin: 30px;
     padding: 0;
-    position: absolute;
-    left: -100px;}
+    position: relative;
+    left: -50px;
+    top: 125px;
+  }
+  div.groupbox1 {/* 주문방법 박스 */
+	width: 1300px;
+	height: auto;
+	margin: 3em 0 3em 0;
+	border: 1px solid #999;
+	padding: 0 8px;
+  text-align: center;
+  position:relative;
+  top: 80px;
+  left: 100px;
+ }
+
+div.groupbox1 h4 {
+	line-height: 100%;
+	padding-left: 8px;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+div.groupbox1 p {
+	margin-bottom: 1em;
+	line-height: 170%;
+}
+  #category{/* 초록선2 위 종류글자 */
+    padding: 0 9px; /*글자 좌우 여백 */
+    background:#FFF;
+    font-family:"맑은 고딕";
+    font-size:30px;text-align:center;
+    position:relative;left:120px;bottom:190px;
+    }
+
+
+  .green_line2{/*초록 구분선2*/
+    width: 100%;
+    height: 3px;
+    background-color: #23A41A;
+    margin-bottom: 200px;
+    margin-top: 100px;
+    padding: 0;
+    position: relative;
+    left: -30px;
+    top: 60px;
+  }
     h3 span {
     background-color: white;		/* span 배경색*/
     color: black;			/* 텍스트 색 */
@@ -100,47 +185,84 @@
     width: 150px;
     height: 150px;
      }
-  div.groupbox1 {/* 주문방법 박스 */
-	width: 1300px;
-	height: auto;
-	margin: 2em 0 1em 0;
-	border: 1px solid #999;
-	padding: 0 8px;
- }
+  .sauce_img{
+    width: 470px;
+    height: 470px;
+    }
 
-div.groupbox1 h4 {
-	line-height: 100%;
-	padding-left: 8px;
-	font-size: 1em;
-	font-weight: normal;
-}
-
-div.groupbox1 p {
-	margin-bottom: 1em;
-	line-height: 170%;
-}
-
-div.groupbox2 {/*아침메뉴 박스*/
-width: 1300px;
-height: auto;
-margin: 2em 0 1em 0;
-border: 1px solid #999;
-padding: 0 8px;
-}
-div.groupbox2 h4 {
-line-height: 100%;
-padding-left: 8px;
-font-size: 20px;
-font-weight: normal;
-}
-div.groupbox2 h4 span {
-background-color: #fff;
-color: #333;
-padding: 0 4px;
-position: relative;
-top: -1.1em;
-}
-div.groupbox2 p {
-	margin-bottom: 1em;
-	line-height: 170%;
-}
+    table{
+      width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+    /*아침메뉴 페이지*/
+    .box1{/*사진위치*/
+      position: relative;
+      bottom: 100px;
+    }
+    .breakfast_title{
+      position: relative;
+      left: 130px;
+      bottom: 100px;
+    }
+    /*클래식 페이지*/
+    .box2{/*사진위치*/
+      position: relative;
+      bottom: 100px;
+    }
+    .classic_titie{
+      position:relative;
+      left: 130px;
+      bottom: 80px;
+    }
+    /*프레쉬 페이지*/
+    .box3{/*사진위치*/
+      position: relative;
+      bottom: 100px;
+    }
+    .fresh_title{/*적용안됨*/
+      position: relative;
+      left: -130px;
+      bottom: 100px;
+    }
+    /*프리미엄 페이지*/
+    .box4{/*사진위치*/
+      position: relative;
+      bottom: 190px;
+    }
+    .premium_title{/*적용안됨*/
+      position: absolute;
+      left: 1300px;
+      bottom: 100px;
+    }
+    /*빵 페이지*/
+    .box5{/*사진위치*/
+      position: relative;
+      bottom: 190px;
+    }
+    .bread_title{/*적용안됨*/
+      position: relative;
+      left: 130px;
+      bottom: 100px;
+    }
+    /*야채 페이지*/
+    .box6{/*사진위치*/
+      position: relative;
+      bottom: 160px;
+    }
+    .vegetable_title{/*적용안됨*/
+      position: relative;
+      left: 130px;
+      bottom: 100px;
+    }
+    /*소스 페이지*/
+    .box7{/*사진위치*/
+      position: relative;
+      bottom: 170px;
+    }
+    .sauce_title{/*적용안됨*/
+      padding: 0;
+      position: relative;
+      left: 300px;
+      bottom: 100px;
+    }
