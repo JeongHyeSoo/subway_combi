@@ -1,0 +1,28 @@
+#logo{
+    margin:10px;
+    position: relative;
+    top: 40px;
+  }
+  /* 상단바 위치 조정 */
+  #bar{
+    position: relative;
+    text-align: right;
+    padding-right: 20px;;
+    }
+  /*상단바 색 변경*/
+  .link{
+    color: black;
+    text-decoration: none;
+    font-family: 'NIXGONM-Vb';
+    font-size: 20px;
+  }
+  .link:hover{
+    color: #23A41A;
+    text-decoration: none;
+  }
+.footer{
+  font-size: 13px;
+  position: relative;
+  top: 100px;
+  text-decoration: underline;
+  }
