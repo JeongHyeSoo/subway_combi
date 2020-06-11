@@ -1,0 +1,39 @@
+<!DOGTYPE html>
+    <html>
+
+    <head>
+        <title>지도w(ﾟДﾟ)w</title>
+
+        //지도 호출
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=29vwai44l1">
+            //지도 호출 안할땐 ClientId 바꾸기~ 카운트 무서워요
+
+        </script>
+    </head>
+
+    <body>
+        <details> //카테고리 접었다펼쳤다 그거
+            <summary>시/도</summary>
+            <ol>
+                <li>강북구</li>
+            </ol>
+        </details>
+
+        //지도 사이즈
+        <div id="map" style="width:50%;height:400px;"></div>
+
+        //지도 첫 호출시 노출 좌표 / zoom: 확대 정도
+        //좌표는 위도,경도 구글에서 따올수있음 - 위치 우클릭-이곳이 궁금한가요?-좌표
+        <script>
+            var mapOptions = {
+                center: new naver.maps.LatLng(37.3595704, 127.105399),
+                zoom: 10
+            };
+
+            var map = new naver.maps.Map('map', mapOptions);
+
+        </script>
+
+    </body>
+
+    </html>
