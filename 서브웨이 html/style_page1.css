@@ -1,41 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');/*구글 폰트 링크*/
-body{/*전체 글꼴*/
-  font-family: 'Nanum Gothic Coding', monospace;
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');/*구글 폰트 링크*/
+  @font-face { font-family: 'NIXGONM-Vb'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff'); font-weight: normal; font-style: normal; }
+body{
   margin-left: 300px;
 }
   .awards_img{width:400px; height: auto;}
   .col-md-5{ text-align: right;}
+  .col-md-7{margin-top:40px;}
   #logo{
-  margin:20px;
- }
-  #bar{/*상단바 위치 조정*/
+    margin:10px;
     position: relative;
-    left:1200px;
-    margin-bottom: 30px;
+    top: 40px;
+  }
+  /* 상단바 위치 조정 */
+  #bar{
+    position: relative;
+    text-align: right;
+    padding-right: 20px;;
     }
   /*상단바 색 변경*/
   .link{
     color: black;
     text-decoration: none;
+    font-family: 'NIXGONM-Vb';
+    font-size: 20px;
   }
   .link:hover{
     color: #23A41A;
     text-decoration: none;
   }
-  body{
-    font-family: 'Nanum Gothic', sans-serif;
-  }
 .footer{
   font-size: 13px;
   position: relative;
-  top: 600px;
+  top: 100px;
   text-decoration: underline;
-  }
-  h1{
-    font-family:
-  }
-  #col-md-7{
-
   }
   #rank_top{
     width: 100%;
@@ -46,26 +43,39 @@ body{/*전체 글꼴*/
     padding-bottom: 60px;
   }
   .awards_img{
-    width: 300px
+    width: 400px
+  }
+  .text_highrights{
+    font-size:40px;
+    font-family: fantasy;
+    color:rgb(0, 158, 0);
   }
   #awards{
     font-weight: bold;
-    font-family:
+    font-family: 'NIXGONM-Vb';
+  }
+  p{
+    font-family: 'NIXGONM-Vb';
   }
   .name{
+    font-family: 'NIXGONM-Vb';
     font-weight:bold;
-    color:#35B62C;
+    color:rgb(255, 187, 0);
   }
   .ex{
+    font-family: 'NIXGONM-Vb';
     font-size: 15px;
     color: #747474;
   }
   .jo{
+    font-family: 'NIXGONM-Vb';
     color: #FF2424;
   }
   .hap{
+    font-family: 'NIXGONM-Vb';
     color: #EDD200;
   }
   .beob{
+    font-family: 'NIXGONM-Vb';
     color: #0BC904;
   }
