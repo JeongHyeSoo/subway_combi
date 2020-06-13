@@ -1,39 +1,195 @@
 <!DOGTYPE html>
     <html>
-
     <head>
         <title>지도w(ﾟДﾟ)w</title>
 
-        //지도 호출
+        <!-- 지도 호출 -->
         <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=29vwai44l1">
-            //지도 호출 안할땐 ClientId 바꾸기~ 카운트 무서워요
-
+        // 지도 호출 안할땐 ClientId 바꾸기~ 카운트 무서워요
         </script>
     </head>
 
+
     <body>
-        <details> //카테고리 접었다펼쳤다 그거
-            <summary>시/도</summary>
-            <ol>
-                <li>강북구</li>
-            </ol>
-        </details>
 
-        //지도 사이즈
-        <div id="map" style="width:50%;height:400px;"></div>
+      <select id="jijum" name="jijum" onchange="onChange();">
+        <option value="" selected disabled>지점 선택</option>
+        <option value="sb">상봉점</option>
+        <option value="nw">노원역점</option>
+        <option value="gwd">광운대점</option>
+      </select>
+      <br>
+      <br>
 
-        //지도 첫 호출시 노출 좌표 / zoom: 확대 정도
-        //좌표는 위도,경도 구글에서 따올수있음 - 위치 우클릭-이곳이 궁금한가요?-좌표
-        <script>
-            var mapOptions = {
-                center: new naver.maps.LatLng(37.3595704, 127.105399),
-                zoom: 10
-            };
+      <!-- 첫화면지도============================================       -->
 
-            var map = new naver.maps.Map('map', mapOptions);
+      <!-- 지도 사이즈 -->
+      <div id="map" style="width:50%;height:400px;"></div>
+
+      <!-- 지도 첫 호출시 노출 좌표 / zoom: 확대 정도
+      좌표는 위도,경도 구글에서 따올수있음 - 위치 우클릭-이곳이 궁금한가요?-좌표 -->
+      <script>
+          var mapOptions = {
+              center: new naver.maps.LatLng(37.644288, 127.105496), //학교 좌표ㅋ
+              zoom: 13
+          };
+          var map = new naver.maps.Map('map', mapOptions);
+      </script>
+      <!-- 첫화면지도============================================       -->
+
+
+
+
+
+
+        <script type="text/javascript">
+
+        // 목록 선택시 지도위치 변경 함수========================
+        function onChange(){
+          var num = document.getElementById("jijum").options[document.getElementById("jijum").selectedIndex].value;
+
+          if(num=="sb"){
+            sangBong();
+          }
+          else if (num=="nw") {
+            nowon();
+          }
+          else if (num=="gwd") {
+            gwang();
+          }
+        }
+
+
+
+        // 지점별 지도 좌표 변경 함수=============================
+        function sangBong(){
+          var HOME_PATH = window.HOME_PATH || '.';
+          var sb = new naver.maps.LatLng(37.596625, 127.086933),
+            map = new naver.maps.Map('map', {
+              center: sb,
+              zoom: 15
+            }),
+            marker = new naver.maps.Marker({
+              map: map,
+              position: sb
+            });
+
+            var contentString = [
+              '<div class="infoWin">',
+              '   <h3>&nbsp; 서브웨이 상봉역점</h3>',
+              '   <p>&nbsp; 서울특별시 중랑구 상봉동 망우로 312&nbsp;</p>',
+              '   <p>&nbsp; 02-432-4375 &nbsp;<p>',
+              '</div>'
+            ].join('');
+
+            var infowindow = new naver.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 350,
+              backgroundColor: "#ffdd00", // 배경색
+              borderColor: "#2db400", //테두리색
+              borderWidth: 5,
+              anchorSize: new naver.maps.Size(30, 30),
+              anchorSkew: true,
+              anchorColor: "#ffdd00", //정보창 아래 역삼각형부분 색
+              pixelOffset: new naver.maps.Point(20, -20)
+            });
+
+            naver.maps.Event.addListener(marker, "click", function(e) {
+              if (infowindow.getMap()) {
+                infowindow.close();
+              } else {
+                infowindow.open(map, marker);
+              }
+            });
+        }
+
+
+        function nowon(){
+          var HOME_PATH = window.HOME_PATH || '.';
+          var nw = new naver.maps.LatLng(37.654487, 127.063442),
+            map = new naver.maps.Map('map', {
+              center: nw,
+              zoom: 15
+            }),
+            marker = new naver.maps.Marker({
+              map: map,
+              position: nw
+            });
+
+            var contentString = [
+              '<div class="infoWin">',
+              '   <h3>&nbsp; 서브웨이 노원역점</h3>',
+              '   <p>&nbsp; 서울특별시 노원구 상계6.7동 노해로 &nbsp;</p>',
+              '   <p>&nbsp; 02-936-0501 &nbsp;<p>',
+              '</div>'
+            ].join('');
+
+            var infowindow = new naver.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 350,
+              backgroundColor: "#ffdd00",
+              borderColor: "#2db400",
+              borderWidth: 5,
+              anchorSize: new naver.maps.Size(30, 30),
+              anchorSkew: true,
+              anchorColor: "#ffdd00",
+              pixelOffset: new naver.maps.Point(20, -20)
+            });
+
+            naver.maps.Event.addListener(marker, "click", function(e) {
+              if (infowindow.getMap()) {
+                infowindow.close();
+              } else {
+                infowindow.open(map, marker);
+              }
+            });
+        }
+
+
+        function gwang(){
+          var HOME_PATH = window.HOME_PATH || '.';
+          var gwd = new naver.maps.LatLng(37.622607, 127.059546),
+            map = new naver.maps.Map('map', {
+              center: gwd,
+              zoom: 15
+            }),
+            marker = new naver.maps.Marker({
+              map: map,
+              position: gwd
+            });
+
+            var contentString = [
+              '<div class="infoWin">',
+              '   <h3>&nbsp; 서브웨이 광운대역점</h3>',
+              '   <p>&nbsp; 서울특별시 노원구 광운로 57 성북플라자 &nbsp;</p>',
+              '   <p>&nbsp; 02-942-7779 &nbsp;<p>',
+              '</div>'
+            ].join('');
+
+            var infowindow = new naver.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 350,
+              backgroundColor: "#ffdd00",
+              borderColor: "#2db400",
+              borderWidth: 5,
+              anchorSize: new naver.maps.Size(30, 30),
+              anchorSkew: true,
+              anchorColor: "#ffdd00",
+              pixelOffset: new naver.maps.Point(20, -20)
+            });
+
+            naver.maps.Event.addListener(marker, "click", function(e) {
+              if (infowindow.getMap()) {
+                infowindow.close();
+              } else {
+                infowindow.open(map, marker);
+              }
+            });
+        }
+
 
         </script>
 
     </body>
 
-    </html>
+</html>
